@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbefec">
+  <title>Baby Shower Fun Zone | SRI Digital Invitations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fun-zone.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="brand">SRI DIGITAL INVITATIONS PRESENTS</div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="cloud cloud-one"></span><span class="cloud cloud-two"></span>
+        <span class="moon">☾</span><span class="star star-one">✦</span><span class="star star-two">✧</span>
+        <div class="teddy">🧸</div>
+        <span class="balloon balloon-pink"></span><span class="balloon balloon-blue"></span>
+      </div>
+      <p class="eyebrow">A celebration of love and new beginnings</p>
+      <h1>A Little Guess,<br><em>A Lot of Love!</em></h1>
+      <p class="couple">Mohan Sai &amp; Pujitha</p>
+      <p class="event-date">19 November 2026 <span>·</span> Baby Shower</p>
+      <p class="intro">Join the fun! Share your prediction and leave a little blessing for the baby.</p>
+      <a class="scroll-link" href="#activities">Explore the fun <span>↓</span></a>
+    </header>
+
+    <nav class="section-nav" id="activities" aria-label="Page sections">
+      <a href="#prediction">💗 Prediction</a>
+      <a href="#wishes">💌 Baby wishes</a>
+    </nav>
+
+    <section class="section-card prediction-card" id="prediction">
+      <div class="section-heading">
+        <span class="section-icon pink-icon">♡</span>
+        <div><p class="eyebrow">MAKE YOUR GUESS</p><h2>What do you predict?</h2></div>
+      </div>
+      <p class="section-copy">Pick your team and see what everyone is guessing. This is just a fun guest poll.</p>
+
+      <form id="prediction-form">
+        <div class="choice-grid">
+          <label class="choice choice-girl">
+            <input type="radio" name="prediction" value="girl" required>
+            <span class="choice-emoji">🎀</span><span class="choice-name">It's a Girl!</span><span class="choice-sub">Team Pink</span>
+          </label>
+          <label class="choice choice-boy">
+            <input type="radio" name="prediction" value="boy" required>
+            <span class="choice-emoji">🧸</span><span class="choice-name">It's a Boy!</span><span class="choice-sub">Team Blue</span>
+          </label>
+        </div>
+        <button class="primary-button" type="submit" id="vote-button">Submit my prediction <span>♡</span></button>
+        <p class="form-message" id="vote-message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="results-panel">
+        <div class="results-title"><div><p class="eyebrow">THE CROWD'S GUESS</p><h3>Live prediction results</h3></div><span class="live-dot">LIVE</span></div>
+        <div id="results-empty" class="empty-state">Be the first to make a prediction!</div>
+        <div id="results-data" hidden>
+          <div class="result-line"><span>🎀 Girl</span><strong id="girl-percent">0%</strong></div>
+          <div class="bar-track"><div class="bar-fill girl-fill" id="girl-bar"></div></div>
+          <div class="result-line"><span>🧸 Boy</span><strong id="boy-percent">0%</strong></div>
+          <div class="bar-track"><div class="bar-fill boy-fill" id="boy-bar"></div></div>
+          <p class="vote-total" id="vote-total">Based on 0 predictions</p>
+        </div>
+        <p class="results-note">Percentages show guest predictions only. No actual baby information is collected or displayed.</p>
+      </div>
+    </section>
+
+    <section class="section-card wishes-card" id="wishes">
+      <div class="section-heading">
+        <span class="section-icon blue-icon">✉</span>
+        <div><p class="eyebrow">A LITTLE NOTE OF LOVE</p><h2>Wishes for our little one</h2></div>
+      </div>
+      <p class="section-copy">Leave a blessing, a heartfelt message or a few words for the parents-to-be.</p>
+      <form id="wish-form">
+        <label class="field-label" for="wish-name">Your name <span>(optional)</span></label>
+        <input class="text-field" id="wish-name" name="name" maxlength="50" placeholder="How should we sign your wish?">
+        <label class="field-label" for="wish-message">Your message</label>
+        <textarea class="text-field message-field" id="wish-message" name="message" maxlength="300" minlength="3" required placeholder="Write your lovely wishes here..."></textarea>
+        <div class="field-footer"><span>Messages are reviewed before appearing on the wishes wall.</span><span id="char-count">0/300</span></div>
+        <button class="primary-button blue-button" type="submit" id="wish-button">Send my wishes <span>♡</span></button>
+        <p class="form-message" id="wish-message-status" role="status" aria-live="polite"></p>
+      </form>
+      <div class="wall-heading"><h3>Love notes from family &amp; friends</h3><span class="wall-sparkle">✧</span></div>
+      <div class="wishes-wall" id="wishes-wall">
+        <div class="empty-state">Your lovely messages will appear here after they are approved.</div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-heart">♡</div>
+      <h2>Thank you for celebrating with us!</h2>
+      <p>Made with love by <strong>SRI Digital Invitations</strong></p>
+      <small>Just for fun · Predictions are not actual results</small>
+    </footer>
+  </main>
+  <script src="fun-zone.js"></script>
+</body>
+</html>
