@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="fun-zone.css">
+  <meta name="description" content="Join Mohan Sai and Pujitha's baby shower Fun Zone! Make your baby prediction and share your wishes.">
+<meta name="color-scheme" content="light">
 </head>
 <body>
   <main class="page-shell">
@@ -23,13 +25,13 @@
       <h1>A Little Guess,<br><em>A Lot of Love!</em></h1>
       <p class="couple">Mohan Sai &amp; Pujitha</p>
       <p class="event-date">19 November 2026 <span>·</span> Baby Shower</p>
-      <p class="intro">Join the fun! Share your prediction and leave a little blessing for the baby.</p>
+      <p class="intro">Be part of our celebration! Make your prediction, cheer for your team and leave a heartfelt wish for our little one.</p>
       <a class="scroll-link" href="#activities">Explore the fun <span>↓</span></a>
     </header>
 
-    <nav class="section-nav" id="activities" aria-label="Page sections">
-      <a href="#prediction">💗 Prediction</a>
-      <a href="#wishes">💌 Baby wishes</a>
+    <nav class="section-nav" id="activities" aria-label="Fun Zone activities">
+      <a href="#prediction" aria-label="Go to baby prediction">💗 Prediction</a>
+      <a href="#wishes" aria-label="Go to baby wishes">💌 Baby wishes</a>
     </nav>
 
     <section class="section-card prediction-card" id="prediction">
@@ -77,7 +79,7 @@
       <form id="wish-form">
         <label class="field-label" for="wish-name">Your name <span>(optional)</span></label>
         <input class="text-field" id="wish-name" name="name" maxlength="50" placeholder="How should we sign your wish?">
-        <label class="field-label" for="wish-message">Your message</label>
+        <label class="field-label" for="wish-message">Your message <span>(required)</span></label>
         <textarea class="text-field message-field" id="wish-message" name="message" maxlength="300" minlength="3" required placeholder="Write your lovely wishes here..."></textarea>
         <div class="field-footer"><span>Messages are reviewed before appearing on the wishes wall.</span><span id="char-count">0/300</span></div>
         <button class="primary-button blue-button" type="submit" id="wish-button">Send my wishes <span>♡</span></button>
