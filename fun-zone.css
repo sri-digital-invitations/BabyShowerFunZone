@@ -73,5 +73,84 @@ h1 em{font-weight:500;color:#b77d91}
 .footer{text-align:center;padding:30px 20px 38px;background:linear-gradient(160deg,#f8e9ed,#f1f5f8)}
 .footer-heart{font-size:28px;color:#c68ba0}.footer h2{font-size:23px;color:#805d67;margin:7px 0}
 .footer p{font-size:11px;color:#987d83;margin:10px 0}.footer small{font-size:10px;color:#aa969a}
+/* =================================
+   SRI DIGITAL INVITATIONS BRANDING
+================================= */
+
+/* Brand logo in hero section */
+.hero .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #a17d83;
+}
+
+.brand-logo {
+  width: 155px;
+  max-height: 65px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Branded footer */
+.footer {
+  padding: 32px 20px 38px;
+}
+
+.footer .brand-tagline {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #805d67;
+  margin: 14px 0;
+}
+
+.footer-logo {
+  width: 125px;
+  max-height: 55px;
+  object-fit: contain;
+  display: block;
+  margin: 12px auto;
+}
+
+.footer a {
+  color: #a65f7e;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .brand-contact,
+.footer .brand-social {
+  font-size: 12px;
+  margin: 8px 0;
+  color: #805d67;
+}
+
+.footer .brand-copyright {
+  display: block;
+  margin-top: 14px;
+  font-size: 10px;
+  color: #aa969a;
+}
+
+/* Mobile logo adjustment */
+@media (max-width: 390px) {
+  .brand-logo {
+    width: 130px;
+    max-height: 55px;
+  }
+
+  .footer .brand-tagline {
+    font-size: 15px;
+  }
+}
 @media(min-width:650px){.section-card{margin:28px 42px;padding:30px 32px}.hero{padding-top:34px}.wishes-wall{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:390px){.section-card{margin:15px 10px;padding:19px 15px}.section-heading h2{font-size:22px}.section-nav a{padding:8px 11px;font-size:11px}.wishes-wall{grid-template-columns:1fr 1fr}}
